@@ -1,0 +1,17 @@
+buildscript {
+  repositories { jcenter() }
+  dependencies {
+    classpath 'io.ratpack:ratpack-gradle:0.9.7'
+  }
+}
+
+apply plugin: 'io.ratpack.ratpack-java'
+apply plugin: 'idea'
+
+repositories {
+  jcenter()
+}
+
+dependencies {
+  compile ratpack.dependency("guice")
+}
